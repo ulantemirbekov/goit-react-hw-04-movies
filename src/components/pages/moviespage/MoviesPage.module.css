@@ -1,0 +1,67 @@
+.movies {
+  padding: 20px;
+}
+.movies_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.63;
+}
+.movies_form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
+  overflow: hidden;
+}
+.movies_formInput {
+  display: inline-block;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  outline: none;
+  padding-left: 15px;
+}
+.movies_formInput::placeholder {
+  font-size: 20px;
+}
+.movies_formBtn {
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  border: 2px solid black;
+  border-radius: 4px;
+  height: 50px;
+  cursor: pointer;
+  outline: none;
+  margin-left: 20px;
+  padding: 10px 25px;
+}
+.movies_formBtn:hover {
+  border: 2px solid #3f51b5;
+  background-color: white;
+  color: #3f51b5;
+}
+.movies_formBtnLabel {
+  font-size: 18px;
+}
+.movies_searchList {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 40px;
+}
+.movies_searchListItem:not(:last-child) {
+  margin-bottom: 1px;
+}
+.movies_searchListLink {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.63;
+  color: #3f51b5;
+  text-decoration: none;
+}
+.movies_searchListLink:hover {
+  color: palevioletred;
+}
