@@ -1,0 +1,29 @@
+.homepage {
+  padding: 20px;
+}
+
+.homepage_title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 2;
+  color: black;
+}
+.trending_list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  margin-top: 10px;
+}
+.trending_listItem:not(:last-child) {
+  margin-bottom: 1px;
+}
+.trending_listLink {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.63;
+  color: #3f51b5;
+  text-decoration: none;
+}
+.trending_listLink:hover {
+  color: palevioletred;
+}
