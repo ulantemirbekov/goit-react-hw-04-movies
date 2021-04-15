@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  padding: 20px;
+  border-bottom: 2px solid black;
+}
+.header_list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header_listItem {
+}
+.header_listItem:not(:last-child) {
+  margin-right: 15px;
+}
+.header_listItemLink {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.63;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* .header_listItemLink:hover {
+  color: palevioletred;
+} */
+
+.header_listItemLink_active {
+  color: palevioletred;
+}
