@@ -7,7 +7,7 @@ const movieDetailsRoutes = [
         exact: true,
         component: lazy(() =>
             import(
-                "../pages/moviedetails/details/cast/Cast" /* webpackChunkName: "Cast"*/
+                "../components/cast/Cast" /* webpackChunkName: "Cast"*/
             )
         ),
     },
@@ -17,7 +17,7 @@ const movieDetailsRoutes = [
         exact: true,
         component: lazy(() =>
             import(
-                "../pages/moviedetails/details/reviews/Reviews" /* webpackChunkName: "Reviews"*/
+                "../components/reviews/Reviews" /* webpackChunkName: "Reviews"*/
             )
         ),
     },

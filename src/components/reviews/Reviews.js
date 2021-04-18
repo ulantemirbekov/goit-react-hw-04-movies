@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
-import { fetchMovieReviews } from "../../../../api/Api";
+import { fetchMovieReviews } from "../../api/Api";
 import styles from "./Reviews.module.css";
 
 const Reviews = () => {
