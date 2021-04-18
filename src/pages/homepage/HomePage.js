@@ -8,9 +8,13 @@ const HomePage = () => {
     const location = useLocation();
 
     useEffect(() => {
-        fetchTrending().then((response) => {
-            setTrendMovies([...response]);
-        });
+        try {
+            fetchTrending().then((response) => {
+                setTrendMovies([...response]);
+            });
+        } catch (error) {
+            console.log(error);
+        };
     }, []);
     return (
 

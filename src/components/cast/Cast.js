@@ -8,8 +8,13 @@ const Cast = () => {
     const location = useLocation();
 
     const getCast = async (id) => {
-        const result = await fetchMovieCast(id);
-        setState({ ...result });
+        try {
+            const result = await fetchMovieCast(id);
+            setState({ ...result });
+
+        } catch (error) {
+            console.log(error);
+        };
     };
 
     useEffect(() => {

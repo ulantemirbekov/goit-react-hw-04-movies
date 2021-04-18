@@ -19,10 +19,16 @@ const MovieDetailsPage = () => {
     const location = useLocation();
 
     const getMovieDetails = async (id) => {
-        const result = await fetchMovieDetails(id);
 
-        setState({ ...result });
+        try {
+            const result = await fetchMovieDetails(id);
+
+            setState({ ...result });
+        } catch (error) {
+            console.log(error);
+        };
     };
+
     useEffect(() => {
         setFrom({ ...location.state });
         getMovieDetails(history.location.state.movieId);

@@ -8,8 +8,13 @@ const Reviews = () => {
     const location = useLocation();
 
     const getReviews = async (id) => {
-        const results = await fetchMovieReviews(id);
-        setState({ ...results });
+        try {
+            const results = await fetchMovieReviews(id);
+            setState({ ...results });
+
+        } catch (error) {
+            console.log(error);
+        };
     };
 
     useEffect(() => {

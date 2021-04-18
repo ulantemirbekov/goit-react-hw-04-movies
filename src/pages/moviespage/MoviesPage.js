@@ -25,12 +25,16 @@ const MoviesPage = () => {
     };
 
     const getMovies = async (query) => {
-        const result = await fetchMovies(query);
+        try {
+            const result = await fetchMovies(query);
 
-        setState((prev) => ({
-            ...prev,
-            searchMovies: [...result],
-        }));
+            setState((prev) => ({
+                ...prev,
+                searchMovies: [...result],
+            }));
+        } catch (error) {
+            console.log(error);
+        };
     };
 
     const onFormSubmit = (e) => {
