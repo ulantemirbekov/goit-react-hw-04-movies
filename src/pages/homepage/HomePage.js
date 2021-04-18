@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { NavLink, useLocation } from "react-router-dom";
-import { fetchTrending } from "../../../api/Api";
+import { fetchTrending } from "../../api/Api";
 import styles from "./HomePage.module.css";
 
 const HomePage = () => {

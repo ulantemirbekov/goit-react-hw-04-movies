@@ -7,8 +7,8 @@ import {
     useLocation,
     useRouteMatch,
 } from "react-router-dom";
-import { fetchMovieDetails } from "../../../api/Api";
-import moviesDetailsRoutes from "../../../routes/MoviesDetailsRoutes";
+import { fetchMovieDetails } from "../../api/Api";
+import moviesDetailsRoutes from "../../routes/MoviesDetailsRoutes";
 import styles from "./MovieDetailsPage.module.css";
 
 const MovieDetailsPage = () => {

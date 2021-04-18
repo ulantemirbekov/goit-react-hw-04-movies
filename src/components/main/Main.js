@@ -1,8 +1,8 @@
 import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 import mainRoutes from "../../routes/MainRoutes";
-import MovieDetailsPage from "../pages/moviedetails/MovieDetailsPage";
-import DefaultPage from "../pages/DefaultPage";
+import MovieDetailsPage from "../../pages/moviedetails/MovieDetailsPage";
+import DefaultPage from "../../pages/DefaultPage";
 
 const Main = () => {
     return (

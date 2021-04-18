@@ -5,7 +5,7 @@ import {
     useLocation,
     useRouteMatch,
 } from "react-router-dom";
-import { fetchMovies } from "../../../api/Api";
+import { fetchMovies } from "../../api/Api";
 import styles from "./MoviesPage.module.css";
 
 const initialState = {

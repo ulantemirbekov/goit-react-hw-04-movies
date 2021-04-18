@@ -7,7 +7,7 @@ const mainRoutes = [
         exact: true,
         component: lazy(() =>
             import(
-                "../components/pages/homepage/HomePage" /* webpackChunkName: "HomePage"*/
+                "../pages/homepage/HomePage" /* webpackChunkName: "HomePage"*/
             )
         ),
     },
@@ -17,7 +17,7 @@ const mainRoutes = [
         exact: true,
         component: lazy(() =>
             import(
-                "../components/pages/moviespage/MoviesPage" /* webpackChunkName: "MoviesPage"*/
+                "../pages/moviespage/MoviesPage" /* webpackChunkName: "MoviesPage"*/
             )
         ),
     },
